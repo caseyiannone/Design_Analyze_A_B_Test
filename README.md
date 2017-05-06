@@ -38,6 +38,6 @@ State whether you used the Bonferroni correction, and explain why or why not. If
 ## Recommendation
 Make a recommendation and briefly describe your reasoning.
 
-### Follow-Up Experiment
+# Follow-Up Experiment
 Give a high-level description of the follow up experiment you would run, what your hypothesis would be, what metrics you would want to measure, what your unit of diversion would be, and your reasoning for these choices.
 
