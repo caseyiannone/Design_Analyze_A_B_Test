@@ -27,7 +27,6 @@
 
 #### Evaluation Metrics
 
-
 * **Gross conversion**: Gross conversion is not a good invariant metric, as the number of users who enroll in the free trial is dependent on the experiment. This metric is defined by the number of user-ids that checkout and enroll in the free trial divided by the number of unique cookies that click the “Start Free-Trial” button. Since this metric is measured after users have seen the experiment, it is directly affected by it, which makes it a strong evaluation metric and vice versa as an invariant metric. I would not expect the control and experiment groups for this metric to be evenly distributed.
 
 * **Retention**: Retention is not a good invariant metric because the number of users who enroll in the free trial is again, dependent on the experiment. This metric is defined as the number of user-ids that stay enrolled passed the free-trial period divided by the number of cookies that clicked on the "Start Free-Trial" button. It is a strong evaluation metric, however based on the experiment duration needed for this metric, it was decided not to use it.
@@ -39,9 +38,9 @@ I calculated that the experiment would need to run for 119 days to match the amo
 In order to justify launching this experiment both gross conversion and net conversion will need to be satisfied. Gross conversion will need to decrease and net conversion will need to, at a minimum, stay level or increase. This will show that the number of users signing up for the free-trial is decreasing, but overall revenue is not negatively impacted by the experiment.
 
 ## Measuring Standard Deviation
-*List the standard deviation of each of your evaluation metrics. (These should be the answers from the "Calculating standard deviation" quiz.)
+*List the standard deviation of each of your evaluation metrics. (These should be the answers from the "Calculating standard deviation" quiz.)*
 
-For each of your evaluation metrics, indicate whether you think the analytic estimate would be comparable to the the empirical variability, or whether you expect them to be different (in which case it might be worth doing an empirical estimate if there is time). Briefly give your reasoning in each case.*
+*For each of your evaluation metrics, indicate whether you think the analytic estimate would be comparable to the the empirical variability, or whether you expect them to be different (in which case it might be worth doing an empirical estimate if there is time). Briefly give your reasoning in each case.*
 
 **Gross conversion** | 0.0202
 **Net conversion** | 0.0156
@@ -59,9 +58,9 @@ The Bonferroni correction was not used in this experiment. The evaluation metric
 
 
 ### Duration vs. Exposure
-*Indicate what fraction of traffic you would divert to this experiment and, given this, how many days you would need to run the experiment. (These should be the answers from the "Choosing Duration and Exposure" quiz.)
+*Indicate what fraction of traffic you would divert to this experiment and, given this, how many days you would need to run the experiment. (These should be the answers from the "Choosing Duration and Exposure" quiz.)*
 
-Give your reasoning for the fraction you chose to divert. How risky do you think this experiment would be for Udacity?*
+*Give your reasoning for the fraction you chose to divert. How risky do you think this experiment would be for Udacity?*
 
 None of the participants could suffer physical harm as a result of the experiment, nor is sensitive data being collected, therefore a 100% exposure is a safe. Dividing total pageviews by the number of pageviews per day in the baseline (40,000), gives us a duration of 119 days were Udacity to divert it’s entire traffic. This is too long of an experiment and we should reduce the duration. We can exclude retention as an evaluation metric and consider the next limiting metric, net conversion. With a revised 685,275 necessary pageviews, it would then take 18 days to run the experiment.
 
@@ -78,9 +77,9 @@ Probability of payment, given enroll | 	0.53
 Probability of payment, given click	 | 0.1093125
 
 ## Sanity Checks
-*For each of your invariant metrics, give the 95% confidence interval for the value you expect to observe, the actual observed value, and whether the metric passes your sanity check. (These should be the answers from the "Sanity Checks" quiz.)
+*For each of your invariant metrics, give the 95% confidence interval for the value you expect to observe, the actual observed value, and whether the metric passes your sanity check. (These should be the answers from the "Sanity Checks" quiz.)*
 
-For any sanity check that did not pass, explain your best guess as to what went wrong based on the day-by-day data. Do not proceed to the rest of the analysis unless all sanity checks pass.*
+*For any sanity check that did not pass, explain your best guess as to what went wrong based on the day-by-day data. Do not proceed to the rest of the analysis unless all sanity checks pass.*
 
 Evaluation Metric | 95% Confidence Interval | Observed | Result
 ----------------- | ----------------------- | -------- | ------
