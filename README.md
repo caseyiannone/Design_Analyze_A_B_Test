@@ -68,11 +68,13 @@ None of the participants could suffer physical harm as a result of the experimen
 
 The data for each group I used to calculate the information below can be in the table below.
 
+Metric | Data Point
+----------------- | -----------------------
 Unique cookies to view page per day	| 40000
 Unique cookies to click "Start free trial" per day	| 3200
 Enrollments per day	| 660
 Click-through-probability on "Start free trial" | 	0.08
-Probability of enrolling, given click | 	0.20625
+Probability of enrolling, given click | 0.20625
 Probability of payment, given enroll | 	0.53
 Probability of payment, given click	 | 0.1093125
 
@@ -143,3 +145,9 @@ A similar formula could be applied when student's are signing up for the 14-day 
 ***Invariant Metrics***: These would be the same as the original experiment.
 
 ***Evaluation Metrics***: These would also be the same as the original experiment.
+
+
+# Resources
+- [Udacity Data Analyst Nanodegree](https://www.udacity.com/course/data-analyst-nanodegree--nd002) 
+- [Kissmetrics Blog](https://blog.kissmetrics.com/ab-testing-introduction/)
+- [Smashing Magazine : Ultimate Guide to A/B Testing](https://www.smashingmagazine.com/2010/06/the-ultimate-guide-to-a-b-testing/)
